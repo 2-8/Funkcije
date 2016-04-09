@@ -1,0 +1,6 @@
+void RandomNiz (int c[], int n) 
+{ 
+ int i; 
+ for (i=0;i<n;i++) 
+  c[i]=rand()%100; 
+} 
