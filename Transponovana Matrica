@@ -1,0 +1,7 @@
+void TransponovanaMatrica (int a[][10], int at[][10], int bv, int bk) 
+{ 
+ int v, k; 
+ for (v=0; v<bv; v++) 
+  for (k=0; k<bk; k++) 
+  at[k][v]=a[v][k]; 
+} 
