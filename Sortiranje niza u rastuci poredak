@@ -1,0 +1,16 @@
+void RP(int *a, int n)
+{
+	int pom;
+	for(int i = 0; i < n; i++)
+	{
+		for(int j = i; j < n; j++)
+		{
+			if(a[j] < a[i])
+			{
+				pom = a[i];
+				a[i] = a[j];
+				a[j] = pom;
+			}
+		}
+	}
+}
