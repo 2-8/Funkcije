@@ -1,0 +1,12 @@
+int Min(a[][10]) {
+	int m = a[0][0], poz = 0;
+	for(int i = 0; i < bv; i ++) {
+		for(int j = 0; j < bk; j ++) {
+			if(a[i][j] > m) {
+				m = a[i][j];
+				poz = i;
+			}
+		}
+	}
+	return poz;
+}
