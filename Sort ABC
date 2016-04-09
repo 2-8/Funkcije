@@ -1,4 +1,4 @@
-void ABCSort( char s[][50],int n)
+void SortABC( char s[][50],int n)
 {
 	int i,k;
     char sp[10];
