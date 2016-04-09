@@ -1,0 +1,11 @@
+void IzbaciRoditelja(char s[])
+{
+	char s1[50];
+	int n, k;
+	n = strchr(s, '(') - s;
+	k = strrchr(s, ')') - s;
+	strncpy(s1,s,n);
+	s1[n]='\0';
+	strcat(s1,s+k+1);
+	puts(s1);
+}
