@@ -1,0 +1,11 @@
+void IspisiMat(int a[][10], int bv, int bk)
+{
+     int v, k;
+     cout << "Izgled matrice:" << '\n';
+     for(v = 0; v < bv; v++)
+     {
+        for(k = 0; k < bk; k++)
+        cout << a[v][k] << '\t';
+        cout << endl;
+     }
+}
