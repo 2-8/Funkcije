@@ -1,0 +1,8 @@
+void UcitajMat(int a[][10], int bv, int bk)
+{
+     int v, k;
+     cout << "Unesi vrednosti elemenata:";
+     for(v = 0; v < bv; v ++)
+     for(k = 0; k < bk; k ++)
+     cin >> a[v][k];
+}
