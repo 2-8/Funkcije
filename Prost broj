@@ -1,0 +1,13 @@
+int prost(int n)
+{
+	int del=2;
+	while (del<n/2)
+	{
+		if(n%del==0)
+		{
+			return 0;
+		}
+		del++;
+	}
+	return 1;
+}
