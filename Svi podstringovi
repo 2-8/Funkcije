@@ -1,0 +1,14 @@
+int SviPod(char *sp)
+{
+	int i,k,p=0;
+	char tp[80];
+	for(i = 0; i < strlen(sp); i ++)
+		for(k = 0; k < strlen(sp) - i; k ++)
+		{
+			strncpy(tp, sp + i, k);
+			tp[k]='\0';
+			puts(tp);
+			p++;
+		}
+		return p;
+}
