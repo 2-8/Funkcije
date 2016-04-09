@@ -1,0 +1,17 @@
+void godinaRodjenjaIspredImenaIZarez()
+{
+char s[100], tp[100];
+int pok, n;
+cout << "Unsei podatke o osobi:Prezime Ime godina rodenja: "<<endl;
+gets(s);
+pok = strrchr(s,' ') - s;
+strcpy(tp, s + pok + 1);
+strncpy(s, s, pok);
+s[pok] = '\0';
+n = strlen(tp);
+tp[n] = ',';
+tp[n + 1] = ' ';
+strcpy(tp + n + 2, s);
+tp[n + pok + 2] = '\0';
+puts(tp);
+}
