@@ -1,0 +1,8 @@
+void ZamenaNizova(int mat[][3], int a, int b) { //zameniti 3 sa odgovarajucim brojem!!!
+	int temp;
+	for(int i = 0; i < 3; i ++) { //zameniti 3 sa odgovarajucim brojem!!!
+		temp = mat[a][i];
+		mat[a][i] = mat[b][i];
+		mat[b][i] = temp;
+	}
+}
