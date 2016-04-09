@@ -1,0 +1,17 @@
+void ABCSort( char s[][50],int n)
+{
+	int i,k;
+    char sp[10];
+    for(i=0;i<n-1;i++)
+		{
+			for(k=i+1;k<n;k++)
+				{
+					if(strcmp(s[i],s[k])>0)
+						{
+							strcpy(sp,s[i]);
+                            strcpy(s[i],s[k]);
+                            strcpy(s[k],sp);
+                        }                 
+                 }
+        }
+}
