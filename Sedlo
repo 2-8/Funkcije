@@ -1,0 +1,23 @@
+int sedlanje(int a[][10],int bv, int bk)
+{
+	int v,k,poz,i,pom,max;
+	for(v=0;v<bv;v++)
+	{
+		pom=0;
+		poz=0;
+		for(k=0;k<bk;k++)
+			if (a[v][poz]>a[v][k])
+				poz=k;
+		max=a[v][poz];
+		for (i=0;i<bv;i++)
+			if(a[i][poz]>max)
+				max=a[i][poz];
+		if(max==a[v][poz])
+		{
+			cout<<"SEDLO:"<<a[v][poz]<<"Vrsta:"<<v<<"Kolona"<<poz;
+			return 1;
+		}
+			
+	}
+	return 0;
+}
