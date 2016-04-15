@@ -1,4 +1,4 @@
-int Min(a[][10]) {
+int Min(int a[][10], int bv, int bk) {
 	int m = a[0][0], poz = 0;
 	for(int i = 0; i < bv; i ++) {
 		for(int j = 0; j < bk; j ++) {
